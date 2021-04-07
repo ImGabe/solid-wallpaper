@@ -22,13 +22,11 @@ func Parse(resolution string) (Resolution, error) {
 	}
 
 	x, err := strconv.Atoi(r[0])
-
 	if err != nil {
 		return Resolution{}, err
 	}
 
 	y, err := strconv.Atoi(r[1])
-
 	if err != nil {
 		return Resolution{}, err
 	}
