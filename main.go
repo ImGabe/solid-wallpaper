@@ -56,7 +56,7 @@ func createWallpaper(resolution resolution.Resolution, r uint8, g uint8, b uint8
 }
 
 var (
-	hex = flag.String("h", "", "hexcolore for wallpaper.")
+	hex = flag.String("h", "", "hexcolor for wallpaper.")
 )
 
 func init() {
