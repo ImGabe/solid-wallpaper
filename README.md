@@ -1,4 +1,4 @@
-# wallpapersolid
+# solid-wallpaper
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -6,8 +6,8 @@
 
 ## How to use
 
-`$ ./wallpapersolid -h color resolution`
+`$ ./solid-wallpaper -h color resolution`
 
 E.g.:
 
-`$ ./wallpapersolid -h 282828 1366x786`
+`$ ./solid-wallpaper -h 282828 1366x786`
