@@ -14,19 +14,16 @@ import (
 
 func hextorgb(hex string) (uint8, uint8, uint8, error) {
 	r, err := strconv.ParseUint(hex[0:2], 16, 32)
-
 	if err != nil {
 		return 0, 0, 0, err
 	}
 
 	g, err := strconv.ParseUint(hex[2:4], 16, 32)
-
 	if err != nil {
 		return 0, 0, 0, err
 	}
 
 	b, err := strconv.ParseUint(hex[4:6], 16, 32)
-
 	if err != nil {
 		return 0, 0, 0, err
 	}
@@ -57,6 +54,7 @@ func createWallpaper(resolution resolution.Resolution, r uint8, g uint8, b uint8
 
 var (
 	hex = flag.String("h", "", "hexcolor for wallpaper.")
+	output = flag.String("o", "", "output from wallpaper.")
 )
 
 func init() {
