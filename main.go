@@ -73,7 +73,7 @@ func main() {
 	}
 
 	if *hex == "" {
-		log.Fatal("\nCorrect Format: --hex color XxY\nExample -h 282828 1366x786")
+		log.Fatal("\nCorrect Format: -h color XxY\nExample -h 282828 1366x786")
 	}
 
 	r, g, b, err := hextorgb(*hex)
