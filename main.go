@@ -48,7 +48,11 @@ func createWallpaper(resolution resolution.Resolution, r uint8, g uint8, b uint8
 		}
 	}
 
-	f, _ := os.Create("wallpaper.png")
+	f, err := os.Create("wallpaper.png")
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	png.Encode(f, img)
 }
 
