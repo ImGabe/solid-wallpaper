@@ -9,7 +9,7 @@ import (
 	"os"
 	"strconv"
 
-	"solid-wallpaper/resolution"
+	"github.com/imgabe/solid-wallpaper/resolution"
 )
 
 func hextorgb(hex string) (uint8, uint8, uint8, error) {
